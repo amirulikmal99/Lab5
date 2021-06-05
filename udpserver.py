@@ -2,7 +2,7 @@ import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-print("Berjaya buat soket")
+print("Berjaya buat soket!")
 
 port = 8888
 
