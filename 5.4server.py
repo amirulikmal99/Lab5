@@ -17,7 +17,7 @@ while True:
 	filename = connection.recv(1024)
 	file = open(filename, "wb")
 
-	msg ="Connected to: " + addr[0] + "], \n **Welcome to Server** \n Thank You! \n"
+	msg = "Connected to: " + addr[0] + ", \n **Thank You!** \n"
 	connection.send(msg.encode("utf-8"))
 
 	rData = connection.recv(1024)
