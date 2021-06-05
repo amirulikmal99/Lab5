@@ -2,6 +2,16 @@ import socket
 import os
 import sys
 
+def encrypt(message):
+    obj = AES.new(b"aabbccddeeffgghh", AES.MODE_CFB,b"aabbccddeeffgghh")
+    enc = obj.encrypt(message)
+    return enc
+
+def decrypt(message):
+    obj = AES.new(b"aabbccddeeffgghh", AES.MODE_CFB,b"aabbccddeeffgghh")
+    dec = obj.decrypt(message)
+    return dec
+
 host = "192.168.56.104"
 
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
